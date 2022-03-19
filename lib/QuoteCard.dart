@@ -25,9 +25,16 @@ class QuoteCard extends StatelessWidget {
             ),
             Container(
               alignment: Alignment.topLeft,
+                height: 30,
+                padding: EdgeInsets.fromLTRB(1,1,2,3),
+                //color: Colors.amber,
                 child: TextButton(
                   //Execute the passed function when the button is pressed
                     onPressed: () => passedFunction(),
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.all(0),
+                      minimumSize: Size(10,10)
+                    ),
                     child: Text('Delete')
                 ))
           ],
