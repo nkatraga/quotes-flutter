@@ -30,6 +30,8 @@ class QuoteCard extends StatelessWidget {
                 //color: Colors.amber,
                 child: TextButton(
                   //Execute the passed function when the button is pressed
+                  //https://stackoverflow.com/questions/47592301/setstate-or-markneedsbuild-called-during-build
+                  //https://medium.com/flutter-community/understanding-lexical-closures-in-dart-flutter-863ec361a614
                     onPressed: () => passedFunction(),
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.all(0),
